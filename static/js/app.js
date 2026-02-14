@@ -1,10 +1,12 @@
 // static/js/app.js
 (() => {
+  // Only run on the hideout page
+  const grid = document.getElementById("tileGrid");
+  if (!grid) return;
+
   // -------------------------------
   // Elements
   // -------------------------------
-  const grid = document.getElementById("tileGrid");
-
   const modalBackdrop = document.getElementById("modalBackdrop");
   const modal = document.getElementById("moduleModal");
   const modalClose = document.getElementById("modalClose");
@@ -35,8 +37,22 @@
   // LocalStorage key (bump version if schema changes)
   const LS_KEY = "eft_hideout_progress_v1";
 
+  // Base URLs (because we're inside /pages/)
+  // - data is at /data/...
+  // - static is at /static/...
+  // From /pages/hideout.html, those are ../data and ../static
+  const BASE = new URL("../", window.location.href);
+
+  function toFromRootish(path) {
+    // Your JSON uses "./static/icons/xyz.png"
+    // From /pages/ this would incorrectly resolve to /pages/static/...
+    // So we strip leading "./" then resolve from BASE (../)
+    const clean = String(path || "").replace(/^\.\//, "");
+    return new URL(clean, BASE).toString();
+  }
+
   // -------------------------------
-  // Storage (static replacement for /api/progress)
+  // Storage
   // -------------------------------
   function loadProgress() {
     try {
@@ -60,15 +76,13 @@
   }
 
   // -------------------------------
-  // Data load (static replacement for /api/hideout)
+  // Data load
   // -------------------------------
   async function loadHideout() {
-    // This fetches directly from your repo/site:
-    // /data/hideout_data.json (relative)
-    const res = await fetch("data/hideout_data.json", { headers: { Accept: "application/json" } });
+    const url = new URL("data/hideout_data.json", BASE).toString();
+    const res = await fetch(url, { headers: { Accept: "application/json" } });
     if (!res.ok) throw new Error(`Failed to load hideout_data.json (${res.status})`);
     const data = await res.json();
-    // Expected: { "modules": [...] }
     if (!data || typeof data !== "object" || !Array.isArray(data.modules)) {
       throw new Error("hideout_data.json is missing { modules: [...] }");
     }
@@ -82,9 +96,8 @@
     remainingList.innerHTML = "";
     const entries = Object.entries(remainingObj || {})
       .filter(([_, qty]) => qty > 0)
-      .sort((a, b) => b[1] - a[1]); // biggest first
+      .sort((a, b) => b[1] - a[1]);
 
-    // keep it readable (top 60). we can add search later.
     entries.slice(0, 60).forEach(([item, qty]) => {
       const row = document.createElement("div");
       row.className = "remaining-item";
@@ -123,7 +136,6 @@
     return (progress?.levels?.[moduleId] ?? 0) | 0;
   }
 
-  // NEW: update the bottom level bar (replaces badge behavior)
   function setTileLevelBar(tile, lvl) {
     const bar = tile.querySelector(".tile-levelbar");
     if (!bar) return;
@@ -135,9 +147,7 @@
     grid.innerHTML = "";
     hideout.modules.forEach((m) => {
       const lvl = getLevel(m.id);
-
-      // Normalize icon path so GitHub Pages always resolves correctly
-      const iconSrc = new URL(m.icon, window.location.href).toString();
+      const iconSrc = toFromRootish(m.icon);
 
       const tile = document.createElement("div");
       tile.className = "tile";
@@ -172,7 +182,6 @@
   }
 
   function renderRequirements(moduleObj, currentLevel) {
-    // Next upgrade = current + 1 (if exists)
     const next = currentLevel + 1;
 
     reqList.innerHTML = "";
@@ -207,9 +216,7 @@
     activeModule = moduleObj;
 
     const current = getLevel(moduleObj.id);
-
-    // Normalize icon path here too
-    modalIcon.src = new URL(moduleObj.icon, window.location.href).toString();
+    modalIcon.src = toFromRootish(moduleObj.icon);
     modalIcon.alt = `${moduleObj.name} icon`;
     modalTitle.textContent = moduleObj.name;
 
@@ -224,7 +231,7 @@
   }
 
   // -------------------------------
-  // Summary (static replacement for /api/summary)
+  // Summary
   // -------------------------------
   function computeSummary(hideoutData, progressData) {
     const levels = progressData?.levels || {};
@@ -232,8 +239,7 @@
     let total_levels = 0;
     let done_levels = 0;
 
-    const remaining = {}; // item -> qty remaining
-    const remaining_fir = {}; // item -> qty remaining where FIR is ever required
+    const remaining = {};
 
     for (const m of hideoutData.modules || []) {
       const mid = m.id;
@@ -243,7 +249,6 @@
       total_levels += max_level;
       done_levels += Math.min(cur, max_level);
 
-      // Remaining: sum requirements for levels > cur
       const upgrades = m.upgrades || {};
       for (const [lvlStr, reqs] of Object.entries(upgrades)) {
         const lvl = Number(lvlStr);
@@ -253,12 +258,7 @@
           const item = (r.item || "").trim();
           const qty = Number(r.qty || 0);
           if (!item || qty <= 0) continue;
-
           remaining[item] = (remaining[item] || 0) + qty;
-
-          if (r.fir === true) {
-            remaining_fir[item] = (remaining_fir[item] || 0) + qty;
-          }
         }
       }
     }
@@ -267,20 +267,15 @@
       total_levels === 0 ? 100.0 : Math.round((done_levels / total_levels) * 10000) / 100;
 
     return {
-      completion: {
-        done_levels,
-        total_levels,
-        percent,
-      },
+      completion: { done_levels, total_levels, percent },
       remaining,
-      remaining_fir,
     };
   }
 
   function refreshSummary() {
     const sum = computeSummary(hideout, progress);
-
     const pct = sum.completion.percent;
+
     progressText.textContent = `Hideout Completion: ${pct}%`;
     progressCounts.textContent = `${sum.completion.done_levels} / ${sum.completion.total_levels} levels`;
     progressFill.style.width = `${Math.min(100, Math.max(0, pct))}%`;
@@ -289,7 +284,7 @@
   }
 
   // -------------------------------
-  // Save flow (static replacement for POST /api/progress)
+  // Save flow
   // -------------------------------
   saveLevelBtn.addEventListener("click", () => {
     if (!activeModule) return;
@@ -312,13 +307,11 @@
 
     refreshSummary();
 
-    // Update tiles without re-rendering everything
     const tiles = [...grid.querySelectorAll(".tile")];
     const idx = hideout.modules.findIndex((m) => m.id === activeModule.id);
     const tile = tiles[idx];
     if (tile) setTileLevelBar(tile, newLevel);
 
-    // Update modal view
     const next = Math.min(newLevel + 1, activeModule.max_level);
     modalMeta.textContent = `Level ${newLevel} → Next: Level ${next}`;
     renderRequirements(activeModule, newLevel);
@@ -333,12 +326,10 @@
     try {
       hideout = await loadHideout();
       progress = loadProgress();
-
       renderTiles();
       refreshSummary();
     } catch (err) {
       console.error(err);
-      // Minimal visible error for users:
       progressText.textContent = "Error loading tracker data.";
       progressCounts.textContent = "";
       if (remainingList) {

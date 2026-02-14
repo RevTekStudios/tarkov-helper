@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Hideout Upgrade Tracker</title>
+  <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+  <div class="bg"></div>
+  <div class="bg-overlay"></div>
+
+  <!-- Top Navigation -->
+  <nav class="topnav">
+    <a href="../index.html" class="btn btn-ghost">← Home</a>
+    <div class="topnav-right">
+      <a href="hideout.html" class="btn btn-ghost active">Hideout</a>
+      <a href="maps.html" class="btn btn-ghost">Maps</a>
+      <a href="flea.html" class="btn btn-ghost">Flea</a>
+    </div>
+  </nav>
+
+  <!-- Page banner -->
+  <header class="hero">
+    <img class="hero-img" src="../static/bg/hero-banner-hideout.png" alt="Hideout Upgrade Tracker">
+  </header>
+
+  <main class="main">
+    <section class="panel">
+      <div class="panel-top">
+        <div class="progress-wrap">
+          <div class="progress-label">
+            <span id="progressText">Hideout Completion: 0%</span>
+            <span id="progressCounts" class="muted"></span>
+          </div>
+          <div class="progress-bar">
+            <div id="progressFill" class="progress-fill" style="width:0%"></div>
+          </div>
+        </div>
+
+        <div class="remaining-box">
+          <div class="section-label">Remaining Items (Totals)</div>
+          <div id="remainingList" class="remaining-list"></div>
+        </div>
+
+        <div class="panel-title">Hideout Modules</div>
+        <div class="panel-sub">Click a module to view the next upgrade requirements.</div>
+      </div>
+
+      <div id="tileGrid" class="tile-grid" aria-label="Hideout modules grid"></div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="modalBackdrop" class="modal-backdrop hidden" aria-hidden="true"></div>
+
+  <div id="moduleModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-header">
+      <div class="modal-header-left">
+        <img id="modalIcon" class="modal-icon" alt="" />
+        <div>
+          <div id="modalTitle" class="modal-title">Module</div>
+          <div id="modalMeta" class="modal-meta">Level 0 → Next: Level 1</div>
+        </div>
+      </div>
+      <button id="modalClose" class="btn btn-ghost" type="button" aria-label="Close">✕</button>
+    </div>
+
+    <div class="modal-body">
+      <div class="modal-section">
+        <div class="section-label">Set Current Level</div>
+        <div class="level-row">
+          <select id="levelSelect" class="select"></select>
+          <button id="saveLevelBtn" class="btn btn-gold" type="button">Save</button>
+        </div>
+        <div id="saveHint" class="hint"></div>
+      </div>
+
+      <div class="modal-section">
+        <div class="section-label">Next Upgrade Requirements</div>
+        <div id="reqList" class="req-list"></div>
+        <div id="reqEmpty" class="hint hidden">No further upgrades (max level reached).</div>
+      </div>
+    </div>
+  </div>
+
+  <script defer src="../static/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Tarkov Helper • Maps</title>
+
+  <!-- IMPORTANT: pages/ is one level deep -->
+  <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+  <div class="bg"></div>
+  <div class="bg-overlay"></div>
+
+  <!-- Top Navigation -->
+  <nav class="topnav">
+    <a href="../index.html" class="btn btn-ghost">← Home</a>
+
+    <div class="topnav-right">
+      <a href="hideout.html" class="btn btn-ghost">Hideout</a>
+      <a href="maps.html" class="btn btn-ghost active">Maps</a>
+      <a href="flea.html" class="btn btn-ghost">Flea</a>
+    </div>
+  </nav>
+
+  <!-- Page banner -->
+  <header class="hero">
+    <img class="hero-img" src="../static/bg/hero-banner-maps.png" alt="Escape from Tarkov Maps">
+  </header>
+
+  <main class="main">
+    <section class="panel">
+
+      <div class="panel-title">Maps</div>
+      <div class="panel-sub">Coming soon — interactive map tools, callouts, and overlays.</div>
+
+      <!-- Shared layout: main content + right panel -->
+      <div class="tool-layout">
+
+        <!-- Left/Main -->
+        <div class="tool-main">
+          <div class="section-label">Map Browser</div>
+
+          <div class="hint" style="margin-top:10px;">
+            This page is a placeholder. Next we’ll add:
+            <br>• Map list + search
+            <br>• Click to open a map
+            <br>• Markers (extracts, quests, keys, loot)
+            <br>• Filters + legend
+          </div>
+
+          <div class="tool-coming">
+            <div class="tool-coming-inner">
+              <div class="tool-coming-title">MAPS MODULE</div>
+              <div class="tool-coming-sub">Under construction</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Panel -->
+        <aside class="tool-side">
+          <div class="section-label">Details</div>
+
+          <div class="hint" style="margin-top:10px;">
+            When you select a map later, this panel will show:
+            <br>• Map name + difficulty
+            <br>• Extract list
+            <br>• Key requirements
+            <br>• Quick filters
+          </div>
+
+          <div class="tool-box" style="margin-top:14px;">
+            <div class="tool-box-title">Quick Actions</div>
+            <div class="tool-box-body">
+              <button class="btn btn-ghost disabled" type="button" onclick="return false;">Open Map</button>
+              <button class="btn btn-ghost disabled" type="button" onclick="return false;">Toggle Extracts</button>
+              <button class="btn btn-ghost disabled" type="button" onclick="return false;">Toggle Loot</button>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+  </main>
+</body>
+</html>
