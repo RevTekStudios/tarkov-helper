@@ -136,13 +136,16 @@
     hideout.modules.forEach((m) => {
       const lvl = getLevel(m.id);
 
+      // Normalize icon path so GitHub Pages always resolves correctly
+      const iconSrc = new URL(m.icon, window.location.href).toString();
+
       const tile = document.createElement("div");
       tile.className = "tile";
       tile.setAttribute("role", "button");
       tile.setAttribute("tabindex", "0");
 
       tile.innerHTML = `
-        <img class="tile-icon" src="${m.icon}" alt="${m.name} icon" />
+        <img class="tile-icon" src="${iconSrc}" alt="${m.name} icon" />
         <div class="tile-name">${m.name}</div>
         <div class="tile-levelbar" data-level="${lvl}">Level ${lvl}</div>
       `;
@@ -205,7 +208,8 @@
 
     const current = getLevel(moduleObj.id);
 
-    modalIcon.src = moduleObj.icon;
+    // Normalize icon path here too
+    modalIcon.src = new URL(moduleObj.icon, window.location.href).toString();
     modalIcon.alt = `${moduleObj.name} icon`;
     modalTitle.textContent = moduleObj.name;
 

@@ -27,7 +27,7 @@
           }
         ]
       },
-      "icon": "static/icons/air_filtering_unit.png",
+      "icon": "./static/icons/air_filtering_unit.png",
       "category": "hideout"
     },
     {
@@ -132,7 +132,7 @@
           }
         ]
       },
-      "icon": "static/icons/bitcoin_farm.png",
+      "icon": "./static/icons/bitcoin_farm.png",
       "category": "hideout"
     },
     {
@@ -185,7 +185,7 @@
           }
         ]
       },
-      "icon": "static/icons/booze_generator.png",
+      "icon": "./static/icons/booze_generator.png",
       "category": "hideout"
     },
     {
@@ -193,7 +193,7 @@
       "name": "Christmas Tree",
       "max_level": 0,
       "upgrades": {},
-      "icon": "static/icons/christmas_tree.png",
+      "icon": "./static/icons/christmas_tree.png",
       "category": "hideout"
     },
     {
@@ -240,7 +240,7 @@
           }
         ]
       },
-      "icon": "static/icons/cultist_circle.png",
+      "icon": "./static/icons/cultist_circle.png",
       "category": "hideout"
     },
     {
@@ -349,7 +349,7 @@
           }
         ]
       },
-      "icon": "static/icons/defective_wall.png",
+      "icon": "./static/icons/defective_wall.png",
       "category": "hideout"
     },
     {
@@ -490,7 +490,7 @@
           }
         ]
       },
-      "icon": "static/icons/gear_rack.png",
+      "icon": "./static/icons/gear_rack.png",
       "category": "hideout"
     },
     {
@@ -565,7 +565,7 @@
           }
         ]
       },
-      "icon": "static/icons/generator.png",
+      "icon": "./static/icons/generator.png",
       "category": "hideout"
     },
     {
@@ -618,7 +618,7 @@
           }
         ]
       },
-      "icon": "static/icons/gym.png",
+      "icon": "./static/icons/gym.png",
       "category": "hideout"
     },
     {
@@ -771,7 +771,7 @@
           }
         ]
       },
-      "icon": "static/icons/hall_of_fame.png",
+      "icon": "./static/icons/hall_of_fame.png",
       "category": "hideout"
     },
     {
@@ -834,7 +834,7 @@
           }
         ]
       },
-      "icon": "static/icons/heating.png",
+      "icon": "./static/icons/heating.png",
       "category": "hideout"
     },
     {
@@ -885,7 +885,7 @@
           }
         ]
       },
-      "icon": "static/icons/illumination.png",
+      "icon": "./static/icons/illumination.png",
       "category": "hideout"
     },
     {
@@ -990,7 +990,7 @@
           }
         ]
       },
-      "icon": "static/icons/intelligence_center.png",
+      "icon": "./static/icons/intelligence_center.png",
       "category": "hideout"
     },
     {
@@ -1083,7 +1083,7 @@
           }
         ]
       },
-      "icon": "static/icons/lavatory.png",
+      "icon": "./static/icons/lavatory.png",
       "category": "hideout"
     },
     {
@@ -1130,7 +1130,7 @@
           }
         ]
       },
-      "icon": "static/icons/library.png",
+      "icon": "./static/icons/library.png",
       "category": "hideout"
     },
     {
@@ -1211,7 +1211,7 @@
           }
         ]
       },
-      "icon": "static/icons/medstation.png",
+      "icon": "./static/icons/medstation.png",
       "category": "hideout"
     },
     {
@@ -1286,7 +1286,7 @@
           }
         ]
       },
-      "icon": "static/icons/nutrition_unit.png",
+      "icon": "./static/icons/nutrition_unit.png",
       "category": "hideout"
     },
     {
@@ -1355,7 +1355,7 @@
           }
         ]
       },
-      "icon": "static/icons/rest_space.png",
+      "icon": "./static/icons/rest_space.png",
       "category": "hideout"
     },
     {
@@ -1408,7 +1408,7 @@
           }
         ]
       },
-      "icon": "static/icons/scav_case.png",
+      "icon": "./static/icons/scav_case.png",
       "category": "hideout"
     },
     {
@@ -1471,7 +1471,7 @@
           }
         ]
       },
-      "icon": "static/icons/security.png",
+      "icon": "./static/icons/security.png",
       "category": "hideout"
     },
     {
@@ -1618,7 +1618,7 @@
           }
         ]
       },
-      "icon": "static/icons/shooting_range.png",
+      "icon": "./static/icons/shooting_range.png",
       "category": "hideout"
     },
     {
@@ -1659,7 +1659,7 @@
           }
         ]
       },
-      "icon": "static/icons/solar_power.png",
+      "icon": "./static/icons/solar_power.png",
       "category": "hideout"
     },
     {
@@ -1667,7 +1667,7 @@
       "name": "Stash",
       "max_level": 0,
       "upgrades": {},
-      "icon": "static/icons/stash.png",
+      "icon": "./static/icons/stash.png",
       "category": "hideout"
     },
     {
@@ -1742,7 +1742,7 @@
           }
         ]
       },
-      "icon": "static/icons/vents.png",
+      "icon": "./static/icons/vents.png",
       "category": "hideout"
     },
     {
@@ -1823,7 +1823,7 @@
           }
         ]
       },
-      "icon": "static/icons/water_collector.png",
+      "icon": "./static/icons/water_collector.png",
       "category": "hideout"
     },
     {
@@ -1982,7 +1982,7 @@
           }
         ]
       },
-      "icon": "static/icons/weapon_rack.png",
+      "icon": "./static/icons/weapon_rack.png",
       "category": "hideout"
     },
     {
@@ -2063,7 +2063,7 @@
           }
         ]
       },
-      "icon": "static/icons/workbench.png",
+      "icon": "./static/icons/workbench.png",
       "category": "hideout"
     }
   ]
