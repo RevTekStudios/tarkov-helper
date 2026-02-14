@@ -26,12 +26,78 @@
   <main class="main">
     <section class="panel">
       <div class="panel-title">Flea Market Tracker</div>
-      <div class="panel-sub">Next step: live prices + filters + favorites.</div>
+      <div class="panel-sub">Live prices + search + right-side details (GitHub Pages friendly).</div>
 
-      <div class="hint" style="margin-top:16px;">
-        Step A (GitHub Pages only): we’ll fetch data client-side and render a market list with a right-side panel.
+      <div class="market-layout" style="margin-top:16px;">
+        <!-- LEFT: list -->
+        <div class="market-left">
+          <div class="market-controls">
+            <input id="searchInput" class="input" type="search" placeholder="Search items (name / short name)..." autocomplete="off">
+            <button id="refreshBtn" class="btn btn-ghost" type="button">Refresh</button>
+          </div>
+
+          <div id="statusLine" class="hint" style="margin-top:10px;"></div>
+
+          <div class="market-table-wrap" style="margin-top:12px;">
+            <table class="market-table">
+              <thead>
+                <tr>
+                  <th style="width:52px;"></th>
+                  <th>Item</th>
+                  <th style="width:140px;">Avg 24h</th>
+                  <th style="width:110px;">48h %</th>
+                </tr>
+              </thead>
+              <tbody id="itemsTbody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- RIGHT: details -->
+        <aside class="market-right">
+          <div class="market-card">
+            <div class="section-label">Selected Item</div>
+
+            <div id="detailEmpty" class="hint" style="margin-top:10px;">
+              Click an item on the left to see details here.
+            </div>
+
+            <div id="detailBody" class="hidden" style="margin-top:12px;">
+              <div class="market-detail-head">
+                <img id="detailIcon" class="market-detail-icon" alt="">
+                <div>
+                  <div id="detailName" class="market-detail-name"></div>
+                  <div id="detailMeta" class="muted"></div>
+                </div>
+              </div>
+
+              <div class="market-metrics">
+                <div class="metric">
+                  <div class="muted">Avg 24h</div>
+                  <div id="detailAvg" class="metric-val"></div>
+                </div>
+                <div class="metric">
+                  <div class="muted">48h Change</div>
+                  <div id="detailChange" class="metric-val"></div>
+                </div>
+              </div>
+
+              <div class="market-links">
+                <a id="detailLink" class="btn btn-ghost" target="_blank" rel="noopener">Open tarkov.dev</a>
+              </div>
+
+              <div style="margin-top:14px;">
+                <div class="section-label">Sell For (Top)</div>
+                <div id="detailSellFor" class="sellfor-list" style="margin-top:10px;"></div>
+              </div>
+            </div>
+          </div>
+        </aside>
       </div>
+
     </section>
   </main>
+
+  <script defer src="../static/js/flea.js"></script>
 </body>
 </html>
