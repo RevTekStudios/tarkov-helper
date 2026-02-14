@@ -1,0 +1,2070 @@
+{
+  "version": "1.0_hideout_from_sheet",
+  "modules": [
+    {
+      "id": "air_filtering_unit",
+      "name": "Air Filtering Unit",
+      "max_level": 1,
+      "upgrades": {
+        "1": [
+          {
+            "item": "Gas mask air filter",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Military power filter",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Military corrugated tube",
+            "qty": 10,
+            "fir": true,
+            "optional": true
+          }
+        ]
+      },
+      "icon": "/static/icons/air_filtering_unit.png",
+      "category": "hideout"
+    },
+    {
+      "id": "bitcoin_farm",
+      "name": "Bitcoin Farm",
+      "max_level": 3,
+      "upgrades": {
+        "1": [
+          {
+            "item": "T-Shaped plug",
+            "qty": 10,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "VPX Flash Storage Module",
+            "qty": 2,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Power cord",
+            "qty": 15,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Power supply unit",
+            "qty": 10,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "CPU fan",
+            "qty": 15,
+            "fir": true,
+            "optional": true
+          }
+        ],
+        "2": [
+          {
+            "item": "CPU fan",
+            "qty": 15,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Power supply unit",
+            "qty": 10,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Printed circuit board",
+            "qty": 15,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Phase control relay",
+            "qty": 10,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Military power filter",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          }
+        ],
+        "3": [
+          {
+            "item": "CPU fan",
+            "qty": 25,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Silicone tube",
+            "qty": 15,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Electric motor",
+            "qty": 10,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Pressure gauge",
+            "qty": 10,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "6-STEN-140-M military battery",
+            "qty": 2,
+            "fir": true,
+            "optional": true
+          }
+        ]
+      },
+      "icon": "/static/icons/bitcoin_farm.png",
+      "category": "hideout"
+    },
+    {
+      "id": "booze_generator",
+      "name": "Booze Generator",
+      "max_level": 1,
+      "upgrades": {
+        "1": [
+          {
+            "item": "Metal spare parts",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Pressure gauge",
+            "qty": 2,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Radiator helix",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Silicone tube",
+            "qty": 10,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Pipe grip wrench",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Analog thermometer",
+            "qty": 2,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Corrugated hose",
+            "qty": 10,
+            "fir": true,
+            "optional": true
+          }
+        ]
+      },
+      "icon": "/static/icons/booze_generator.png",
+      "category": "hideout"
+    },
+    {
+      "id": "christmas_tree",
+      "name": "Christmas Tree",
+      "max_level": 0,
+      "upgrades": {},
+      "icon": "/static/icons/christmas_tree.png",
+      "category": "hideout"
+    },
+    {
+      "id": "cultist_circle",
+      "name": "Cultist Circle",
+      "max_level": 1,
+      "upgrades": {
+        "1": [
+          {
+            "item": "PAID AntiRoach spray",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Light bulb",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Can of white salt",
+            "qty": 3,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "SurvL Survivor Lighter",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Construction measuring tape",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "WI-FI Camera",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          }
+        ]
+      },
+      "icon": "/static/icons/cultist_circle.png",
+      "category": "hideout"
+    },
+    {
+      "id": "defective_wall",
+      "name": "Defective Wall",
+      "max_level": 5,
+      "upgrades": {
+        "1": [
+          {
+            "item": "Fleece fabric",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          }
+        ],
+        "2": [
+          {
+            "item": "Fleece fabric",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          }
+        ],
+        "3": [
+          {
+            "item": "Fierce Blow sledgehammer *Optional:",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Fleece fabric",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          }
+        ],
+        "4": [
+          {
+            "item": "Metal cutting scissors",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Toolset *Optional:",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Fleece fabric",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          }
+        ],
+        "5": [
+          {
+            "item": "Corrugated hose",
+            "qty": 2,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Duct tape",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Toolset",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Pliers Elite",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Metal spare parts",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Xenomorph sealing foam",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Bundle of wires",
+            "qty": 2,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Light bulb",
+            "qty": 2,
+            "fir": true,
+            "optional": true
+          }
+        ]
+      },
+      "icon": "/static/icons/defective_wall.png",
+      "category": "hideout"
+    },
+    {
+      "id": "gear_rack",
+      "name": "Gear Rack",
+      "max_level": 3,
+      "upgrades": {
+        "1": [
+          {
+            "item": "Electric drill",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Sewing kit",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Awl",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Leatherman Multitool",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Bolts",
+            "qty": 15,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Fleece fabric",
+            "qty": 10,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Energy-saving lamp",
+            "qty": 8,
+            "fir": true,
+            "optional": true
+          }
+        ],
+        "2": [
+          {
+            "item": "Electric drill",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Duct tape",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Shustrilo sealing foam",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Pack of nails",
+            "qty": 8,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Energy-saving lamp",
+            "qty": 12,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Aramid fiber fabric",
+            "qty": 10,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Wrench",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          }
+        ],
+        "3": [
+          {
+            "item": "Body armor repair kit",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Cordura polyamide fabric",
+            "qty": 10,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Metal spare parts",
+            "qty": 15,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "KEKTAPE duct tape",
+            "qty": 10,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Energy-saving lamp",
+            "qty": 15,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Set of files \"Master\"",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Ratchet wrench",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          }
+        ]
+      },
+      "icon": "/static/icons/gear_rack.png",
+      "category": "hideout"
+    },
+    {
+      "id": "generator",
+      "name": "Generator",
+      "max_level": 3,
+      "upgrades": {
+        "1": [
+          {
+            "item": "Spark plug",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          }
+        ],
+        "2": [
+          {
+            "item": "Bulbex cable cutter",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Phase control relay",
+            "qty": 10,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Electric motor",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Bundle of wires",
+            "qty": 15,
+            "fir": true,
+            "optional": true
+          }
+        ],
+        "3": [
+          {
+            "item": "Power supply unit",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Phase control relay",
+            "qty": 12,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Electric motor",
+            "qty": 3,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Spark plug",
+            "qty": 16,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Metal spare parts",
+            "qty": 10,
+            "fir": true,
+            "optional": true
+          }
+        ]
+      },
+      "icon": "/static/icons/generator.png",
+      "category": "hideout"
+    },
+    {
+      "id": "gym",
+      "name": "Gym",
+      "max_level": 1,
+      "upgrades": {
+        "1": [
+          {
+            "item": "Insulating tape",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Metal cutting scissors",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "WD-40 (100ml)",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Toolset",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Screw nuts",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Electric drill",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Bolts",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          }
+        ]
+      },
+      "icon": "/static/icons/gym.png",
+      "category": "hideout"
+    },
+    {
+      "id": "hall_of_fame",
+      "name": "Hall Of Fame",
+      "max_level": 3,
+      "upgrades": {
+        "1": [
+          {
+            "item": "Insulating tape",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Pack of nails",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Light bulb",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Cat figurine",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Fleece fabric",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Round pliers",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          }
+        ],
+        "2": [
+          {
+            "item": "Tech manual",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Pliers Elite",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Toolset",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Golden rooster figurine",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Energy-saving lamp",
+            "qty": 10,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Pack of screws",
+            "qty": 6,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Duct tape",
+            "qty": 3,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Xenomorph sealing foam",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Tube of Poxeram cold welding-",
+            "qty": 2,
+            "fir": true,
+            "optional": true
+          }
+        ],
+        "3": [
+          {
+            "item": "Set of files \"Master\"",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Electric drill",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Bronze lion figurine",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Energy-saving lamp",
+            "qty": 15,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "KEKTAPE duct tape",
+            "qty": 3,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "T-Shaped plug",
+            "qty": 6,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Metal spare parts",
+            "qty": 15,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Power cord",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          }
+        ]
+      },
+      "icon": "/static/icons/hall_of_fame.png",
+      "category": "hideout"
+    },
+    {
+      "id": "heating",
+      "name": "Heating",
+      "max_level": 3,
+      "upgrades": {
+        "1": [
+          {
+            "item": "Classic matches",
+            "qty": 2,
+            "fir": true,
+            "optional": true
+          }
+        ],
+        "2": [
+          {
+            "item": "Dry fuel",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Hunting matches",
+            "qty": 2,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Crickent lighter",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          }
+        ],
+        "3": [
+          {
+            "item": "Military corrugated tube",
+            "qty": 2,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Radiator helix",
+            "qty": 10,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Bundle of wires",
+            "qty": 10,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Phase control relay",
+            "qty": 4,
+            "fir": true,
+            "optional": true
+          }
+        ]
+      },
+      "icon": "/static/icons/heating.png",
+      "category": "hideout"
+    },
+    {
+      "id": "illumination",
+      "name": "Illumination",
+      "max_level": 3,
+      "upgrades": {
+        "1": [
+          {
+            "item": "Crickent lighter",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          }
+        ],
+        "2": [
+          {
+            "item": "Light bulb",
+            "qty": 14,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Bundle of wires",
+            "qty": 10,
+            "fir": true,
+            "optional": true
+          }
+        ],
+        "3": [
+          {
+            "item": "Energy-saving lamp",
+            "qty": 12,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Capacitors",
+            "qty": 7,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Bundle of wires",
+            "qty": 12,
+            "fir": true,
+            "optional": true
+          }
+        ]
+      },
+      "icon": "/static/icons/illumination.png",
+      "category": "hideout"
+    },
+    {
+      "id": "intelligence_center",
+      "name": "Intelligence Center",
+      "max_level": 3,
+      "upgrades": {
+        "1": [
+          {
+            "item": "Power cord",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Intelligence folder",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Topographic survey maps",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Factory plan map",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Working LCD",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          }
+        ],
+        "2": [
+          {
+            "item": "Intelligence folder",
+            "qty": 3,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Secure Flash drive",
+            "qty": 3,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Power cord",
+            "qty": 7,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Damaged hard drive",
+            "qty": 8,
+            "fir": true,
+            "optional": true
+          }
+        ],
+        "3": [
+          {
+            "item": "Military cable",
+            "qty": 8,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Military COFDM Wireless Signal Transmitter",
+            "qty": 2,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Far-forward GPS Signal Amplifier Unit",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "VPX Flash Storage Module",
+            "qty": 2,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Military flash drive",
+            "qty": 8,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Secure magnetic tape cassette",
+            "qty": 2,
+            "fir": true,
+            "optional": true
+          }
+        ]
+      },
+      "icon": "/static/icons/intelligence_center.png",
+      "category": "hideout"
+    },
+    {
+      "id": "lavatory",
+      "name": "Lavatory",
+      "max_level": 3,
+      "upgrades": {
+        "1": [
+          {
+            "item": "Toilet paper",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Toothpaste",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Soap",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Awl",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          }
+        ],
+        "2": [
+          {
+            "item": "KEKTAPE duct tape",
+            "qty": 3,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Corrugated hose",
+            "qty": 6,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Pack of screws",
+            "qty": 6,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Electric drill",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Sewing kit",
+            "qty": 2,
+            "fir": true,
+            "optional": true
+          }
+        ],
+        "3": [
+          {
+            "item": "Xenomorph sealing foam",
+            "qty": 6,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Corrugated hose",
+            "qty": 10,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Pressure gauge",
+            "qty": 2,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Toolset",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          }
+        ]
+      },
+      "icon": "/static/icons/lavatory.png",
+      "category": "hideout"
+    },
+    {
+      "id": "library",
+      "name": "Library",
+      "max_level": 1,
+      "upgrades": {
+        "1": [
+          {
+            "item": "BakeEzy cook book",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Slim diary",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Diary",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Tech manual",
+            "qty": 8,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Chainlet",
+            "qty": 2,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Horse figurine",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          }
+        ]
+      },
+      "icon": "/static/icons/library.png",
+      "category": "hideout"
+    },
+    {
+      "id": "medstation",
+      "name": "Medstation",
+      "max_level": 3,
+      "upgrades": {
+        "1": [
+          {
+            "item": "Disposable syringe",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Pile of meds",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Aseptic bandage",
+            "qty": 2,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Bottle of OLOLO Multivitamins",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          }
+        ],
+        "2": [
+          {
+            "item": "Bottle of saline solution",
+            "qty": 6,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Medical tools",
+            "qty": 3,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Medical bloodset",
+            "qty": 2,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Esmarch tourniquet",
+            "qty": 10,
+            "fir": true,
+            "optional": true
+          }
+        ],
+        "3": [
+          {
+            "item": "Ophthalmoscope",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Bottle of saline solution",
+            "qty": 10,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "LEDX Skin Transilluminator",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          }
+        ]
+      },
+      "icon": "/static/icons/medstation.png",
+      "category": "hideout"
+    },
+    {
+      "id": "nutrition_unit",
+      "name": "Nutrition Unit",
+      "max_level": 3,
+      "upgrades": {
+        "1": [
+          {
+            "item": "Can of white salt",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Power cord",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Phase control relay",
+            "qty": 2,
+            "fir": true,
+            "optional": true
+          }
+        ],
+        "2": [
+          {
+            "item": "Alkaline cleaner for heat exchangers",
+            "qty": 2,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Wrench",
+            "qty": 4,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Corrugated hose",
+            "qty": 4,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Phase control relay",
+            "qty": 3,
+            "fir": true,
+            "optional": true
+          }
+        ],
+        "3": [
+          {
+            "item": "Can of Majaica coffee beans",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Pack of sodium bicarbonate",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Smoked Chimney drain cleaner",
+            "qty": 2,
+            "fir": true,
+            "optional": true
+          }
+        ]
+      },
+      "icon": "/static/icons/nutrition_unit.png",
+      "category": "hideout"
+    },
+    {
+      "id": "rest_space",
+      "name": "Rest Space",
+      "max_level": 3,
+      "upgrades": {
+        "1": [
+          {
+            "item": "Classic matches",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Duct tape",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          }
+        ],
+        "2": [
+          {
+            "item": "Magnet",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "DVD drive",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Energy-saving lamp",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          }
+        ],
+        "3": [
+          {
+            "item": "GreenBat lithium battery",
+            "qty": 4,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Bundle of wires",
+            "qty": 10,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Capacitors",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Power cord",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          }
+        ]
+      },
+      "icon": "/static/icons/rest_space.png",
+      "category": "hideout"
+    },
+    {
+      "id": "scav_case",
+      "name": "Scav Case",
+      "max_level": 1,
+      "upgrades": {
+        "1": [
+          {
+            "item": "Golden rooster figurine",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Lucky Scav Junk box",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Bottle of Fierce Hatchling moonshine",
+            "qty": 3,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Roler Submariner gold wrist watch",
+            "qty": 4,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Golden neck chain",
+            "qty": 8,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Gold skull ring",
+            "qty": 6,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Bronze lion figurine",
+            "qty": 3,
+            "fir": true,
+            "optional": true
+          }
+        ]
+      },
+      "icon": "/static/icons/scav_case.png",
+      "category": "hideout"
+    },
+    {
+      "id": "security",
+      "name": "Security",
+      "max_level": 3,
+      "upgrades": {
+        "1": [
+          {
+            "item": "Construction measuring tape",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          }
+        ],
+        "2": [
+          {
+            "item": "WD-40 (100ml)",
+            "qty": 2,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Pliers Elite",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "TP-200 TNT brick",
+            "qty": 2,
+            "fir": true,
+            "optional": true
+          }
+        ],
+        "3": [
+          {
+            "item": "NIXXOR lens",
+            "qty": 8,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Working LCD",
+            "qty": 2,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Bundle of wires",
+            "qty": 10,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "SSD drive",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          }
+        ]
+      },
+      "icon": "/static/icons/security.png",
+      "category": "hideout"
+    },
+    {
+      "id": "shooting_range",
+      "name": "Shooting Range",
+      "max_level": 3,
+      "upgrades": {
+        "1": [
+          {
+            "item": "Metal spare parts",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Bolts",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Screw nuts",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          }
+        ],
+        "2": [
+          {
+            "item": "Electric motor",
+            "qty": 3,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Construction measuring tape",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Tube of Poxeram cold welding",
+            "qty": 3,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Toolset",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Pack of screws",
+            "qty": 3,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Electric drill",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Metal spare parts",
+            "qty": 8,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "WI-FI Camera",
+            "qty": 3,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Bundle of wires",
+            "qty": 6,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Energy-saving lamp",
+            "qty": 6,
+            "fir": true,
+            "optional": true
+          }
+        ],
+        "3": [
+          {
+            "item": "Set of files \"Master\"",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Printed circuit board",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Bundle of wires",
+            "qty": 10,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Metal spare parts",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Capacitors",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Phase control relay",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Power cord",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Leatherman Multitool",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Tech manual *-",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          }
+        ]
+      },
+      "icon": "/static/icons/shooting_range.png",
+      "category": "hideout"
+    },
+    {
+      "id": "solar_power",
+      "name": "Solar Power",
+      "max_level": 1,
+      "upgrades": {
+        "1": [
+          {
+            "item": "Phased array element",
+            "qty": 6,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Advanced current converter",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Working LCD",
+            "qty": 3,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Military cable",
+            "qty": 10,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Military power filter",
+            "qty": 10,
+            "fir": true,
+            "optional": true
+          }
+        ]
+      },
+      "icon": "/static/icons/solar_power.png",
+      "category": "hideout"
+    },
+    {
+      "id": "stash",
+      "name": "Stash",
+      "max_level": 0,
+      "upgrades": {},
+      "icon": "/static/icons/stash.png",
+      "category": "hideout"
+    },
+    {
+      "id": "vents",
+      "name": "Vents",
+      "max_level": 3,
+      "upgrades": {
+        "1": [
+          {
+            "item": "Roubles",
+            "qty": 25000,
+            "fir": true,
+            "optional": true
+          }
+        ],
+        "2": [
+          {
+            "item": "Metal spare parts",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "CPU fan",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Car battery",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Electric motor",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          }
+        ],
+        "3": [
+          {
+            "item": "Printed circuit board",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Electric motor",
+            "qty": 4,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Metal spare parts",
+            "qty": 10,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Bundle of wires",
+            "qty": 14,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Car battery",
+            "qty": 4,
+            "fir": true,
+            "optional": true
+          }
+        ]
+      },
+      "icon": "/static/icons/vents.png",
+      "category": "hideout"
+    },
+    {
+      "id": "water_collector",
+      "name": "Water Collector",
+      "max_level": 3,
+      "upgrades": {
+        "1": [
+          {
+            "item": "Duct tape",
+            "qty": 3,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Screw nuts",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Bolts",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Corrugated hose",
+            "qty": 4,
+            "fir": true,
+            "optional": true
+          }
+        ],
+        "2": [
+          {
+            "item": "Toolset",
+            "qty": 2,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Corrugated hose",
+            "qty": 6,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Electric motor",
+            "qty": 2,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "KEKTAPE duct tape",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          }
+        ],
+        "3": [
+          {
+            "item": "Ratchet wrench",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Pliers Elite",
+            "qty": 2,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Shustrilo sealing foam",
+            "qty": 10,
+            "fir": true,
+            "optional": true
+          }
+        ]
+      },
+      "icon": "/static/icons/water_collector.png",
+      "category": "hideout"
+    },
+    {
+      "id": "weapon_rack",
+      "name": "Weapon Rack",
+      "max_level": 3,
+      "upgrades": {
+        "1": [
+          {
+            "item": "Pack of nails",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Energy-saving lamp",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Insulating tape",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Hand drill",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Bolts",
+            "qty": 15,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Metal cutting scissors",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Xenomorph sealing foam",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          }
+        ],
+        "2": [
+          {
+            "item": "Metal spare parts",
+            "qty": 10,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Pack of screws",
+            "qty": 10,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Electric drill",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Bundle of wires",
+            "qty": 10,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Set of files \"Master\"",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Tube of Poxeram cold welding",
+            "qty": 3,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Energy-saving lamp",
+            "qty": 10,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Duct tape",
+            "qty": 10,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Weapon parts-",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          }
+        ],
+        "3": [
+          {
+            "item": "Electric drill",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Energy-saving lamp",
+            "qty": 15,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Metal spare parts",
+            "qty": 10,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "KEKTAPE duct tape",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Bundle of wires",
+            "qty": 15,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Shustrilo sealing foam",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Tech manual",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "#FireKlean gun lube",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          }
+        ]
+      },
+      "icon": "/static/icons/weapon_rack.png",
+      "category": "hideout"
+    },
+    {
+      "id": "workbench",
+      "name": "Workbench",
+      "max_level": 3,
+      "upgrades": {
+        "1": [
+          {
+            "item": "Screw nuts",
+            "qty": 2,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Bolts",
+            "qty": 2,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Leatherman Multitool",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          }
+        ],
+        "2": [
+          {
+            "item": "Bolts",
+            "qty": 10,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Toolset",
+            "qty": 3,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Set of files \"Master\"",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Electric drill",
+            "qty": 2,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Weapon parts",
+            "qty": 3,
+            "fir": true,
+            "optional": true
+          }
+        ],
+        "3": [
+          {
+            "item": "Can of thermite",
+            "qty": 5,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "Pliers Elite",
+            "qty": 2,
+            "fir": true,
+            "optional": true
+          },
+          {
+            "item": "#FireKlean gun lube",
+            "qty": 1,
+            "fir": true,
+            "optional": true
+          }
+        ]
+      },
+      "icon": "/static/icons/workbench.png",
+      "category": "hideout"
+    }
+  ]
+}
