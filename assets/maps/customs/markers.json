@@ -1,0 +1,5 @@
+[
+  { "id":"ex-zb1011", "type":"extract", "name":"ZB-1011", "x": 6500, "y": 7200, "tags":["pmc"] },
+  { "id":"sp-1", "type":"spawn", "name":"PMC Spawn", "x": 2100, "y": 3300, "tags":["pmc"] },
+  { "id":"loot-3", "type":"loot", "name":"Medbag", "x": 4600, "y": 4000, "tags":["medical"] }
+]

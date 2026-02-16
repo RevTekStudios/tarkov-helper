@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Map</title>
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+  <!-- Sidebar + MarkerCluster -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-sidebar-v2@3.2.3/css/leaflet-sidebar.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
+
+  <link rel="stylesheet" href="/static/css/maps.css" />
+</head>
+<body class="map-page">
+
+  <header class="map-topbar">
+    <button class="btn" id="backBtn" type="button">← Maps</button>
+    <div class="title" id="mapTitle">Loading…</div>
+    <div class="top-actions">
+      <button class="btn" id="resetBtn" type="button">Reset</button>
+      <button class="btn" id="shareBtn" type="button">Share</button>
+    </div>
+  </header>
+
+  <div id="map"></div>
+
+  <!-- Sidebar -->
+  <div id="sidebar" class="leaflet-sidebar collapsed">
+    <div class="leaflet-sidebar-tabs">
+      <ul role="tablist">
+        <li><a href="#layers" role="tab">☰</a></li>
+        <li><a href="#details" role="tab">ⓘ</a></li>
+      </ul>
+    </div>
+
+    <div class="leaflet-sidebar-content">
+      <div class="leaflet-sidebar-pane" id="layers">
+        <h1 class="leaflet-sidebar-header">
+          Filters
+          <span class="leaflet-sidebar-close">×</span>
+        </h1>
+
+        <div class="sidebar-block">
+          <label class="field">
+            <span>Search</span>
+            <input id="searchInput" type="search" placeholder="Extract, loot, name…" autocomplete="off" />
+          </label>
+        </div>
+
+        <div class="sidebar-block">
+          <div class="subhead">Layers</div>
+          <div id="layerList" class="layer-list"></div>
+        </div>
+      </div>
+
+      <div class="leaflet-sidebar-pane" id="details">
+        <h1 class="leaflet-sidebar-header">
+          Details
+          <span class="leaflet-sidebar-close">×</span>
+        </h1>
+        <div id="detailsBody" class="details-body muted">Click a marker.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS libs -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-sidebar-v2@3.2.3/js/leaflet-sidebar.min.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+  <script src="/static/js/map_viewer.js"></script>
+</body>
+</html>

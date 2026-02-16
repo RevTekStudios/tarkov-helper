@@ -1,0 +1,10 @@
+{
+  "slug": "customs",
+  "name": "Customs",
+  "tileUrl": "/assets/maps/customs/tiles/{z}/{x}/{y}.webp",
+  "tileSize": 256,
+  "minZoom": 0,
+  "maxZoom": 6,
+  "imgSize": { "w": 8192, "h": 8192 },
+  "start": { "x": 4096, "y": 4096, "z": 2 }
+}

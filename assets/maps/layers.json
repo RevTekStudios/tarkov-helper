@@ -1,0 +1,7 @@
+{
+  "extract": { "label": "Extracts" },
+  "spawn":   { "label": "Spawns" },
+  "loot":    { "label": "Loot" },
+  "quest":   { "label": "Quests" },
+  "poi":     { "label": "Landmarks" }
+}
