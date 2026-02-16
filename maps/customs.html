@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Customs Map</title>
+
+  <!-- Shared site styles -->
+  <link rel="stylesheet" href="../static/css/styles.css">
+  <!-- Customs-only styles -->
+  <link rel="stylesheet" href="../static/css/customs.css">
+</head>
+
+<body class="customs-page">
+  <div class="wrap">
+
+  <!-- Topbar with back button -->
+    <div class="map-topbar">
+      <button class="btn btn-ghost" id="backToMapsBtn" type="button">
+        ← Back to Maps
+      </button>
+    </div>
+
+    <!-- Right-side Layers UI -->
+    <div class="ui">
+      <div class="panel" id="layersPanel">
+        <header>
+          <div class="title">Layers</div>
+          <button class="btn btn-ghost" id="togglePanelBtn" type="button" aria-label="Toggle layers panel">▾</button>
+        </header>
+
+        <div class="body">
+
+          <div class="group">
+            <div class="label">Presets</div>
+            <div class="row">
+              <button class="btn btn-gold" data-preset="base" type="button">Base</button>
+              <button class="btn btn-gold" data-preset="extracts" type="button">Extracts</button>
+            </div>
+            <div class="row">
+              <button class="btn btn-gold" data-preset="spawns" type="button">Spawns</button>
+              <button class="btn btn-gold" data-preset="boss" type="button">Boss</button>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="label">Extracts</div>
+
+            <div class="row">
+              <span>PMC Extracts</span>
+              <label class="switch">
+                <input type="checkbox" data-layer="pmcExtracts">
+                <span class="slider"></span>
+              </label>
+            </div>
+
+            <div class="row">
+              <span>Scav Extracts</span>
+              <label class="switch">
+                <input type="checkbox" data-layer="scavExtracts">
+                <span class="slider"></span>
+              </label>
+            </div>
+
+            <div class="row">
+              <span>Transits</span>
+              <label class="switch">
+                <input type="checkbox" data-layer="transits">
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="label">Spawns</div>
+
+            <div class="row">
+              <span>PMC Spawns</span>
+              <label class="switch">
+                <input type="checkbox" data-layer="pmcSpawns">
+                <span class="slider"></span>
+              </label>
+            </div>
+
+            <div class="row">
+              <span>Scav Spawns</span>
+              <label class="switch">
+                <input type="checkbox" data-layer="scavSpawns">
+                <span class="slider"></span>
+              </label>
+            </div>
+
+            <div class="row">
+              <span>Snipers</span>
+              <label class="switch">
+                <input type="checkbox" data-layer="sniperSpawns">
+                <span class="slider"></span>
+              </label>
+            </div>
+
+            <div class="row">
+              <span>Boss</span>
+              <label class="switch">
+                <input type="checkbox" data-layer="bossSpawns">
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Zoom controls -->
+    <div class="zoombar">
+      <button class="btn" id="zoomOutBtn" type="button">−</button>
+      <button class="btn" id="zoomResetBtn" type="button">Reset</button>
+      <button class="btn" id="zoomInBtn" type="button">+</button>
+    </div>
+
+    <!-- Map viewport -->
+    <div class="viewport" id="viewport">
+      <div class="stage" id="stage">
+
+        <!-- base -->
+        <img class="layer" id="base" src="../static/maps/customs/customs-base.jpg" alt="Customs map">
+
+        <!-- overlays -->
+        <img class="layer hidden" id="pmcExtracts"  src="../static/maps/customs/customs-pmc-extracts.png" alt="">
+        <img class="layer hidden" id="scavExtracts" src="../static/maps/customs/customs-scav-extracts.png" alt="">
+        <img class="layer hidden" id="transits"     src="../static/maps/customs/customs-transits.png" alt="">
+        <img class="layer hidden" id="pmcSpawns"    src="../static/maps/customs/customs-spawn-pmc.png" alt="">
+        <img class="layer hidden" id="scavSpawns"   src="../static/maps/customs/customs-spawn-scav.png" alt="">
+        <img class="layer hidden" id="sniperSpawns" src="../static/maps/customs/customs-spawn-sniper.png" alt="">
+        <img class="layer hidden" id="bossSpawns"   src="../static/maps/customs/customs-spawn-boss.png" alt="">
+
+        <!-- Hotspots overlay -->
+        <svg class="hotspots" id="hotspots" xmlns="http://www.w3.org/2000/svg" aria-label="Customs hotspots">
+          <!-- JS sets the points after base image loads -->
+          <polygon id="dormsHotspot" class="hotspot" points="0,0 0,0 0,0 0,0"></polygon>
+        </svg>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Customs-only JS -->
+  <script src="../static/js/customs.js" defer></script>
+</body>
+</html>

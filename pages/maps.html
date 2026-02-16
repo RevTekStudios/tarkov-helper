@@ -32,7 +32,7 @@
     <section class="panel">
 
       <div class="panel-title">Maps</div>
-      <div class="panel-sub">Coming soon — interactive map tools, callouts, and overlays.</div>
+      <div class="panel-sub">Interactive map tools, callouts, and overlays.</div>
 
       <!-- Shared layout: main content + right panel -->
       <div class="tool-layout">
@@ -42,18 +42,29 @@
           <div class="section-label">Map Browser</div>
 
           <div class="hint" style="margin-top:10px;">
-            This page is a placeholder. Next we’ll add:
-            <br>• Map list + search
+            This page is evolving. Next we’ll add:
+            <br>• More maps + search
             <br>• Click to open a map
-            <br>• Markers (extracts, quests, keys, loot)
+            <br>• Overlays (extracts, quests, keys, loot)
             <br>• Filters + legend
           </div>
 
-          <div class="tool-coming">
-            <div class="tool-coming-inner">
-              <div class="tool-coming-title">MAPS MODULE</div>
-              <div class="tool-coming-sub">Under construction</div>
-            </div>
+          <!-- Map cards -->
+          <div class="map-grid">
+            <a class="map-card" href="../maps/customs.html">
+              <img class="map-thumb" src="../static/maps/customs/customs-base.jpg" alt="Customs Map">
+              <div class="map-card-body">
+                <div class="map-card-title">Customs</div>
+                <div class="map-card-sub">
+                  Zoomable map with toggleable overlays (extracts, spawns, boss, snipers) and a Dorms link.
+                </div>
+                <div class="pill-row">
+                  <span class="pill">Overlays</span>
+                  <span class="pill">Zoom</span>
+                  <span class="pill">Dorms</span>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
 
@@ -72,7 +83,7 @@
           <div class="tool-box" style="margin-top:14px;">
             <div class="tool-box-title">Quick Actions</div>
             <div class="tool-box-body">
-              <button class="btn btn-ghost disabled" type="button" onclick="return false;">Open Map</button>
+              <a class="btn btn-ghost" href="../maps/customs.html">Open Customs</a>
               <button class="btn btn-ghost disabled" type="button" onclick="return false;">Toggle Extracts</button>
               <button class="btn btn-ghost disabled" type="button" onclick="return false;">Toggle Loot</button>
             </div>

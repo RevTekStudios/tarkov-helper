@@ -1,0 +1,51 @@
+/* Dorms map page only */
+
+.map-wrap{
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background: #000;
+}
+
+.map-viewport{
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  touch-action: none; /* pointer pan */
+  background: #000;
+}
+
+.map-stage{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: 0 0;
+  will-change: transform;
+}
+
+.map-stage img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
+}
+
+.map-topbar{
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 20;
+  display: flex;
+  gap: 10px;
+}
+
+.map-zoombar{
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+  z-index: 20;
+  display: flex;
+  gap: 10px;
+}
