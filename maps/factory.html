@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Factory</title>
+
+  <link rel="stylesheet" href="../static/css/styles.css">
+  <link rel="stylesheet" href="../static/css/factory.css">
+</head>
+
+<body class="factory-page">
+  <div class="wrap">
+
+    <!-- top left nav -->
+    <div class="map-topbar">
+      <button class="btn btn-ghost" id="backToMapsBtn" type="button">
+        ← Back to Maps
+      </button>
+    </div>
+
+    <!-- right panel -->
+    <div class="ui">
+      <div class="panel" id="panel">
+        <header>
+          <div class="title">FACTORY</div>
+          <button class="btn btn-ghost" id="togglePanelBtn" type="button">Collapse</button>
+        </header>
+
+        <div class="body">
+          <div class="group">
+            <div class="label">Layers</div>
+
+            <div class="row">
+              <span>PMC Spawns</span>
+              <label class="switch">
+                <input type="checkbox" data-layer="pmc_spawns" checked>
+                <span class="slider"></span>
+              </label>
+            </div>
+
+            <div class="row">
+              <span>Boss (Tagilla)</span>
+              <label class="switch">
+                <input type="checkbox" data-layer="boss_spawns" checked>
+                <span class="slider"></span>
+              </label>
+            </div>
+
+            <div class="row">
+              <span>PMC Extracts</span>
+              <label class="switch">
+                <input type="checkbox" data-layer="pmc_extracts" checked>
+                <span class="slider"></span>
+              </label>
+            </div>
+
+            <div class="row">
+              <span>Scav Extracts</span>
+              <label class="switch">
+                <input type="checkbox" data-layer="scav_extracts" checked>
+                <span class="slider"></span>
+              </label>
+            </div>
+
+            <div class="row">
+              <span>Transits</span>
+              <label class="switch">
+                <input type="checkbox" data-layer="transits" checked>
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="label">View</div>
+            <div class="row">
+              <button class="btn btn-primary" id="fitBtn" type="button">Fit to Screen</button>
+              <button class="btn" id="resetBtn" type="button">Reset</button>
+            </div>
+            <div class="row">
+              <span id="zoomReadout">100%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- viewport -->
+    <div class="viewport" id="viewport" aria-label="Factory map viewport">
+      <div class="stage" id="stage">
+        <!-- Base -->
+        <img class="layer base"
+             id="baseLayer"
+             src="../static/maps/factory/factory-base.jpg"
+             alt="Factory base map">
+
+        <!-- Overlays -->
+        <img class="layer"
+             data-layer-id="pmc_spawns"
+             src="../static/maps/factory/factory-spawn-pmc.png"
+             alt="PMC spawns overlay">
+
+        <img class="layer"
+             data-layer-id="boss_spawns"
+             src="../static/maps/factory/factory-spawn-boss.png"
+             alt="Boss spawns overlay">
+
+        <img class="layer"
+             data-layer-id="pmc_extracts"
+             src="../static/maps/factory/factory-pmc-extracts.png"
+             alt="PMC extracts overlay">
+
+        <img class="layer"
+             data-layer-id="scav_extracts"
+             src="../static/maps/factory/factory-scav-extracts.png"
+             alt="Scav extracts overlay">
+
+        <img class="layer"
+             data-layer-id="transits"
+             src="../static/maps/factory/factory-transits.png"
+             alt="Transit overlay">
+      </div>
+    </div>
+
+    <!-- zoom controls bottom-left -->
+    <div class="zoombar" aria-label="Zoom controls">
+      <button class="btn" id="zoomOutBtn" type="button">−</button>
+      <button class="btn" id="zoomInBtn" type="button">+</button>
+    </div>
+
+  </div>
+
+  <script src="../static/js/factory.js"></script>
+</body>
+</html>

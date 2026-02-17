@@ -1,0 +1,74 @@
+.maps-wrap{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 18px 18px 44px;
+}
+
+.maps-header h1{
+  margin: 0;
+  letter-spacing: .10em;
+}
+
+.maps-header p{
+  margin: 10px 0 0;
+  opacity: .75;
+  max-width: 90ch;
+}
+
+.maps-panel{
+  margin-top: 14px;
+  padding: 14px;
+  border-radius: 16px;
+}
+
+.maps-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+.map-card{
+  display:block;
+  text-decoration:none;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(10,12,12,.55);
+  overflow:hidden;
+  box-shadow: var(--shadow-soft, 0 10px 30px rgba(0,0,0,.55));
+  transition: transform .12s ease, border-color .12s ease;
+}
+
+.map-card:hover{
+  transform: translateY(-2px);
+  border-color: rgba(212,161,23,.35);
+}
+
+.map-thumb{
+  /* THIS is what makes the preview smaller */
+  height: 120px;            /* tweak: 110–140 depending on taste */
+  overflow:hidden;
+  background: rgba(0,0,0,.35);
+}
+
+.map-thumb img{
+  width:100%;
+  height:100%;
+  object-fit: cover;        /* nice crop */
+  display:block;
+  opacity: .95;
+}
+
+.map-meta{
+  padding: 12px 12px 14px;
+}
+
+.map-meta h3{
+  margin: 0;
+  letter-spacing: .06em;
+}
+
+.map-meta p{
+  margin: 6px 0 0;
+  opacity: .75;
+  font-size: .95rem;
+}
